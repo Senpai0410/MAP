@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAP.MainPage">
+
+    <Grid RowSpacing="10" ColumnSpacing="10"
+          VerticalOptions="FillAndExpand"
+          HorizontalOptions="FillAndExpand">
+        <!-- Define the row and column sizes -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Image Buttons -->
+        <ImageButton Source="cycling.png" Grid.Row="0" Grid.Column="0"
+                     Clicked="OnCyclingClicked" Aspect="AspectFill"/>
+        <ImageButton Source="hiking.png" Grid.Row="0" Grid.Column="1"
+                     Clicked="OnHikingClicked" Aspect="AspectFill"/>
+        <ImageButton Source="camping.png" Grid.Row="1" Grid.Column="0"
+                     Clicked="OnCampingClicked" Aspect="AspectFill"/>
+        <ImageButton Source="rock_climbing.png" Grid.Row="1" Grid.Column="1"
+                     Clicked="OnRockClimbingClicked" Aspect="AspectFill"/>
+    </Grid>
+
+</ContentPage>
